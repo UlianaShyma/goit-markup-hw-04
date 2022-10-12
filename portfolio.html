@@ -20,21 +20,33 @@
     <header class="header">
       <div class="header-container container">
         <a href="./index.html" class="logo link">Web<span class="logo-header">Studio</span></a>
-        <nav class="menu-nav">
-          <ul class="page-nav">
-            <li class="item"><a class="menu-link link" href="./index.html">Студія</a></li>
-            <li class="item">
+        <nav class="page-nav">
+          <ul class="menu-nav">
+            <li class="menu-item">
+              <a class="menu-link link" href="./index.html">Студія</a>
+            </li>
+            <li class="menu-item">
               <a class="menu-link link current" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="item"><a class="menu-link link" href="">Контакти</a></li>
+            <li class="menu-item"><a class="menu-link link" href="">Контакти</a></li>
           </ul>
         </nav>
         <ul class="contact-list">
-          <li class="item">
-            <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <li class="contact-item">
+            <a class="contact-link link" href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./img/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
-          <li class="item">
-            <a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="contact-item">
+            <a class="contact-link link" href="tel:+380961111111">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./img/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -54,7 +66,7 @@
             <li class="item"><button type="button" class="filter-btn">Маркетинг</button></li>
           </ul>
           <ul class="portfolio-list">
-            <li class="item">
+            <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <img src="./img/portfolio_1.jpg" alt="Технокряк" width="370" />
                 <div class="text-item">
@@ -63,7 +75,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <img src="./img/portfolio_2.jpg" alt="New Orlean vs Golden Star" width="370" />
                 <div class="text-item">
@@ -74,7 +86,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <img src="./img/portfolio_3.jpg" alt="Seafood" width="370" />
                 <div class="text-item">
@@ -83,7 +95,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <img src="./img/portfolio_4.jpg" alt="Prime" width="370" />
                 <div class="text-item">
@@ -92,8 +104,8 @@
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="potfolio-link link">
+            <li class="portfolio-item">
+              <a href="#" class="portfolio-link link">
                 <img src="./img/portfolio_5.jpg" alt="Boxes" width="370" />
                 <div class="text-item">
                   <h2 class="portfolio-title">Проєкт <span lang="en">Boxes</span></h2>
@@ -101,7 +113,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <img src="./img/portfolio_6.jpg" alt="Inspiration has no Borders" width="370" />
                 <div class="text-item">
@@ -110,7 +122,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <img src="./img/portfolio_7.jpg" alt="Limited Edition" width="370" />
                 <div class="text-item">
@@ -119,7 +131,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <img src="./img/portfolio_8.jpg" alt="LAB" width="370" />
                 <div class="text-item">
@@ -128,7 +140,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <img src="./img/portfolio_9.jpg" alt="Growing Business" width="370" />
                 <div class="text-item">
@@ -143,31 +155,66 @@
     </main>
     <!-- Footer section -->
     <footer class="footer">
-      <div class="container">
-        <a class="logo link link-footer" href="./index.html"
-          >Web<span class="logo-footer">Studio</span></a
-        >
-        <address>
-          <ul class="footer-address">
-            <li class="item">
-              <a
-                class="footer-location link"
-                href="https://goo.gl/maps/BwEUq69gMEttFAh37"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
+      <div class="container footer-container">
+        <div class="footer-address">
+          <a class="logo link link-footer" href="./index.html"
+            >Web<span class="logo-footer">Studio</span></a
+          >
+          <address>
+            <ul class="footer-address-list">
+              <li class="item">
+                <a
+                  class="footer-location link"
+                  href="https://goo.gl/maps/BwEUq69gMEttFAh37"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="item">
+                <a class="footer-conctact link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a class="footer-conctact link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-media">
+          <p class="footer-media-title">Приєднуйтесь</p>
+          <ul class="footer-media-list">
+            <li class="footer-media-item">
+              <a href="" class="footer-media-link">
+                <svg aria-label="instagram icon" class="footer-media-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a class="footer-conctact link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+            <li class="footer-media-item">
+              <a href="" class="footer-media-link">
+                <svg aria-label="twitter icon" class="footer-media-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a class="footer-conctact link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="footer-media-item">
+              <a href="" class="footer-media-link">
+                <svg aria-label="facebook icon" class="footer-media-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-media-item">
+              <a href="" class="footer-media-link">
+                <svg aria-label="linkedin icon" class="footer-media-icon" width="20" height="20">
+                  <use href="./img/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
